@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zuckerstück</title>
+    </head>
+    <style>
+        #moodboard {
+            width: 100%;
+            height: 100px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        #overview {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        #moodboard div {
+            display: inline-block;
+            overflow: hidden;
+            transition: width 0.2s;
+        }
+
+        #moodboard div p {
+            padding: 10px;
+            font-family: Monospace;
+            white-space: normal;
+            display: none;
+            text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
+        }
+    </style>
+    <body>
+
+    <div id="moodboard"></div>
+
+    <div id="overview"></div>
+
+    <script src="d3.v4.min.js"></script>
+    <script src="dygraph.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+
+    </body>
+</html>
